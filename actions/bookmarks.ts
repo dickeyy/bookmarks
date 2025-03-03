@@ -53,7 +53,6 @@ export async function getAllBookmarks(): Promise<BookmarkWithCategory[]> {
         return [];
     }
 
-    console.log(bookmarks);
     return bookmarks.map((bookmark) => ({
         id: bookmark.id,
         title: bookmark.title,
